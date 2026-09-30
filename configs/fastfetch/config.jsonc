@@ -1,0 +1,116 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "ascii.txt",
+    "color": {
+      "1": "#F5E0DC",
+      "2": "#F2CDCD",
+      "3": "#F5C2E7",
+      "4": "#FAB387",
+      "5": "#F9E2AF",
+      "6": "#A6E3A1",
+      "7": "#94E2D5",
+      "8": "#89DCEB",
+      "9": "#74C7EC"
+    },
+    "padding": {
+      "top": 1,
+      "right": 6
+    }
+  },
+  "display": {
+    "separator": " "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "color": {
+        "user": "#b1be74",
+        "at": "#c3c6c8",
+        "host": "#6d8968"
+      }
+    },
+    "break",
+    { "type": "custom", "format": "┌─── Hardware ─────────" },
+    {
+      "type": "cpu",
+      "key": "│ CPU",
+      "keyColor": "#ddb169",
+      "format": "{name} ({cores-logical}) @ {freq-max}"
+    },
+    {
+      "type": "gpu",
+      "key": "│ GPU",
+      "keyColor": "#db9aab",
+      "format": "{name} ({dedicated-total})",
+      "detectionMethod": "pci",
+      "hideType": "integrated"
+    },
+    {
+      "type": "memory",
+      "key": "│ RAM",
+      "keyColor": "#6d8968",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "disk",
+      "key": "│ Disk",
+      "keyColor": "#db9aab",
+      "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+    { "type": "custom", "format": "└──────────────────────" },
+    "break",
+    { "type": "custom", "format": "┌─── Software ─────────" },
+    {
+      "type": "os",
+      "key": "│ OS",
+      "keyColor": "#b1be74",
+      "format": "{pretty-name} {arch}"
+    },
+    {
+      "type": "kernel",
+      "key": "│ Kernel",
+      "keyColor": "#89DCEB",
+      "format": "{sysname} {release}"
+    },
+    {
+      "type": "shell",
+      "key": "│ Shell",
+      "keyColor": "#F9E2AF",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "terminal",
+      "key": "│ Term",
+      "keyColor": "#A6E3A1",
+      "format": "{pretty-name} {version}"
+    },
+    { "type": "custom", "format": "└──────────────────────" },
+    "break",
+    { "type": "custom", "format": "┌─── Uptime ───────────" },
+    {
+      "type": "uptime",
+      "key": "│ Up",
+      "keyColor": "#A6E3A1",
+      "format": "{formatted}"
+    },
+    {
+      "type": "datetime",
+      "key": "│ Date",
+      "keyColor": "#F9E2AF",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty}"
+    },
+    { "type": "custom", "format": "└──────────────────────" },
+    "break",
+        { "type": "custom", "format": "\"Pain and suffering are always inevitable" },
+    { "type": "custom", "format": "for a large intelligence and a deep heart." },
+    { "type": "custom", "format": "The really great men must, I think, have" },
+    { "type": "custom", "format": "great sadness on earth.\"" },
+    { "type": "custom", "format": "" },
+    { "type": "custom", "format": "   — Fyodor Dostoevsky" },
+    "break",
+    { "type": "colors", "symbol": "circle" }
+  ]
+}
